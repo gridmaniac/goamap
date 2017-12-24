@@ -1,0 +1,27 @@
+.modal.fade#upload
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(data-dismiss='modal')
+          span ×
+        .modal-title Загрузка фотографий
+      .modal-body
+        .form-group
+          label Выберите файлы с компьютера
+          input.form-control(type='file' name='photos' multiple)
+          input#album(type='hidden' value=query.album)
+        br
+        .form-group
+          label.checkbox Пакетная обработка
+            span.icons
+              span.first-icon.fa.fa-square-o
+              span.second-icon.fa.fa-check-square-o
+            input#batch-flag(type='checkbox' data-toggle='checkbox')
+        br
+        .form-group
+          .progress
+            .progress-bar.progress-bar-success#progress
+      .modal-footer
+        button.btn.btn-primary#upload-start Начать загрузку
+        button.btn.btn-success#upload-start-fake(style='display:none') Начать загрузку
+        button.btn.btn-secondary(data-dismiss='modal') Закрыть

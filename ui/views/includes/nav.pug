@@ -1,0 +1,33 @@
+block nav
+  nav.navbar.navbar-default.navbar-fixed
+    .container-fluid
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navigation-example-2')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='')=`${pagetitle || title}`
+      .collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-left
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              i.fa.fa-globe
+              |  
+              b.caret.hidden-sm.hidden-xs
+              p.hidden-lg.hidden-md
+                | Изменить язык
+                b.caret
+            ul.dropdown-menu
+              li
+                a(href='#') RU
+              li
+                a(href='#') EN
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='/settings')
+              p Настройки
+          li
+            a(href='/logout')
+              p Выйти
+          li.separator.hidden-lg.hidden-md

@@ -1,0 +1,36 @@
+block sidebar
+  .sidebar(data-color='blue', data-image='/assets/img/sidebar-5.jpg')
+    .sidebar-wrapper
+      .logo
+        a.simple-text(href='/')
+          img(src='/assets/img/logo.png')
+          | Goamap Admin
+
+      block link
+        -const active = '/'
+      -
+        const menu = { 
+          '/guides': { title : 'Путеводитель', icon: 'pe-7s-helm' }, 
+          '/articles': { title : 'Статьи', icon: 'pe-7s-news-paper' }, 
+          '/albums': { title : 'Фотографии', icon: 'pe-7s-photo' }, 
+          '/placetags': { title : 'Места', icon: 'pe-7s-map-marker' }, 
+          '/adcats': { title : 'Объявления', icon: 'pe-7s-note2' }, 
+          '/users': { title : 'Пользователи', icon: 'pe-7s-user' }
+        }
+
+      ul.nav
+        each val, key in menu
+          if active === key
+            li.active
+              a(href=key)
+                i(class=val.icon)
+                p=val.title
+          else
+            li
+              a(href=key)
+                i(class=val.icon)
+                p=val.title
+        li.active-pro
+          a(href='/statistics')
+            i.pe-7s-graph1
+            p Статистика

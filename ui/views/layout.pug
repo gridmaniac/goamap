@@ -1,0 +1,15 @@
+doctype html
+html
+  include ./includes/head
+  body
+    .wrapper
+      include ./includes/sidebar
+      .main-panel
+        include ./includes/nav
+        .content
+          .container-fluid
+            include ./includes/scripts
+            block content
+        .hidden#notification #{notify}
+        .hidden#notification-type #{notifyType}
+        include ./includes/footer

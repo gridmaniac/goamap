@@ -1,0 +1,24 @@
+.modal.fade#placetag-picker
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(data-dismiss='modal')
+          span ×
+        .modal-title Перемещение мест
+      .modal-body
+        .form-group
+          label Поиск категории мест
+          input.form-control#placetag-search(type='text')
+        br
+        .form-group
+          table.table.table-hover
+            thead
+              tr
+                th
+                th Название
+            tbody#placetags
+              tr
+                td
+                td Нет результатов
+      .modal-footer
+        button.btn.btn-secondary(data-dismiss='modal') Закрыть

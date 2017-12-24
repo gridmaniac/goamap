@@ -1,0 +1,53 @@
+extends layout
+
+block link
+  -var active = '/adcats'
+
+block content
+  .row
+    .col-lg-10
+      .card.clearfix
+        form.header(method='get')
+          .text-center
+            a.btn.btn-primary.btn-simple.btn-xs(href='/ads' rel='tooltip' title='' data-original-title='Поиск объявлений')
+              i.fa.fa-search
+            a.btn.btn-danger.btn-simple.btn-xs#adcat-remove-checked(href='#' rel='tooltip' title='' data-original-title='Удалить выбранные')
+              i.fa.fa-trash-o
+        .content.table-full-width
+          table.table.table-hover.table-bigboy
+            thead
+              tr
+                th
+                  label.checkbox
+                    span.icons
+                      span.first-icon.fa.fa-square-o
+                      span.second-icon.fa.fa-check-square-o
+                    input#check-all(type='checkbox' value='' data-toggle='checkbox' disabled=!adcats || adcats.length == 0)
+                th
+                th Название
+                th.text-right Действия
+            tbody
+              if (!adcats || adcats.length == 0)
+                tr  
+                  td(colspan='2')
+                  td(colspan='2') Нет категорий объявлений
+              else
+                each adcat in adcats
+                  tr
+                    td
+                      label.checkbox
+                        span.icons
+                          span.first-icon.fa.fa-square-o
+                          span.second-icon.fa.fa-check-square-o
+                        input(type='checkbox' value=adcat._id data-toggle='checkbox')
+                    td
+                      i.fa.fa-archive.text-success
+                    td.td-name
+                      a(href=`/ads?adcat=${adcat._id}`) #{adcat.title}
+                    td.td-actions.text-right
+                      a.btn.btn-danger.btn-simple.btn-xs.adcat-remove(href=`#` data-id=adcat._id rel='tooltip' title='' data-original-title='Удалить')
+                        i.fa.fa-trash-o
+                      a.btn.btn-success.btn-simple.btn-xs(href=`/adcats/${adcat._id}` rel='tooltip' title='' data-original-title='Редактировать')
+                        i.fa.fa-edit
+          .content.text-right
+            a.btn.btn-fill.btn-success(href='/adcats/new') Новая категория

@@ -1,0 +1,66 @@
+extends layout
+
+block link
+  -var active = '/users'
+
+block content
+  .row
+    .col-lg-10
+      .card.clearfix
+        form.header(method='get')
+          .search.pull-left
+            input.form-control(type='text' placeholder='Поиск' name='like' value=query.like autofocus)
+          .pull-right.hidden-xs
+            select.form-control(name='sort' onchange='this.form.submit()')
+              option(value='') По названию
+              option(value='date-desc' selected=query.sort=='date-desc') По дате (последние)
+              option(value='date' selected=query.sort=='date') По дате (поздние)
+          .text-center
+            a.btn.btn-danger.btn-simple.btn-xs#user-remove-checked(href='#' rel='tooltip' title='' data-original-title='Удалить выбранные')
+              i.fa.fa-trash-o
+        .content.table-full-width
+          table.table.table-hover.table-bigboy
+            thead
+              tr
+                th
+                  label.checkbox
+                    span.icons
+                      span.first-icon.fa.fa-square-o
+                      span.second-icon.fa.fa-check-square-o
+                    input#check-all(type='checkbox' value='' data-toggle='checkbox' disabled=!users || users.length == 0)
+                th Email
+                th.hidden-xs Имя
+                th Роль
+                th.hidden-xs Баланс
+                th.text-right Действия
+            tbody
+              if (!users || users.length == 0)
+                tr  
+                  td(colspan='1')
+                  td(colspan='5') Пользователи отсутсвуют
+              else
+                each user in users
+                  tr
+                    td
+                      label.checkbox
+                        span.icons
+                          span.first-icon.fa.fa-square-o
+                          span.second-icon.fa.fa-check-square-o
+                        input(type='checkbox' value=user._id data-toggle='checkbox')
+                    td #{user.email}
+                    td.td-name
+                      a(href=`/users/${user._id}`) #{user.name}
+                    if (user.role == 1)
+                      td.hidden-xs Администратор
+                    else
+                      td.hidden-xs Пользователь
+                    td #{user.balance}
+                    td.td-actions.text-right
+                      a.btn.btn-danger.btn-simple.btn-xs.user-remove(href=`#` data-id=user._id rel='tooltip' title='' data-original-title='Удалить')
+                        i.fa.fa-trash-o
+                      a.btn.btn-success.btn-simple.btn-xs(href=`/users/${user._id}` rel='tooltip' title='' data-original-title='Редактировать')
+                        i.fa.fa-edit
+          .text-center
+            include modules/pagination
+          .content.text-right
+            //a.btn.btn-fill.btn-success(href='/users/new') Новый альбом

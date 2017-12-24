@@ -1,0 +1,179 @@
+guideAll:
+  map: "function (doc) { if (doc.type === 'guide') { emit(doc.sort, { _id: doc._id, title: doc.title, parent: doc.parent }) }}"
+
+articleAll:
+  map: "function (doc) {
+    if (doc.type === 'article') {
+      emit(doc.title, {
+        _id: doc._id,
+        title: doc.title,
+        description: doc.description,
+        date: doc.date
+      })
+    }
+  }"
+
+articleAllSortDate:
+  map: "function (doc) {
+    if (doc.type === 'article') {
+      emit(doc.date, {
+        _id: doc._id,
+        title: doc.title,
+        description: doc.description,
+        date: doc.date
+      })
+    }
+  }"
+
+articleCount:
+  map: function (doc) { if (doc.type === 'article') { emit(doc._id, 1) }}
+  reduce: _count
+
+albumAll:
+  map: "function (doc) {
+    if (doc.type === 'album') {
+      emit(doc.title, {
+        _id: doc._id,
+        title: doc.title,
+        description: doc.description,
+        date: doc.date
+      })
+    }
+  }"
+
+albumAllSortDate:
+  map: "function (doc) {
+    if (doc.type === 'album') {
+      emit(doc.date, {
+        _id: doc._id,
+        title: doc.title,
+        description: doc.description,
+        date: doc.date
+      })
+    }
+  }"
+
+albumCount:
+  map: function (doc) { if (doc.type === 'album') { emit(doc._id, 1) }}
+  reduce: _count
+
+albumByTitle:
+  map: function (doc) { if (doc.type === 'album' && doc.title) { emit(doc.title, doc) }}
+
+photoAll:
+  map: "function (doc) {
+    if (doc.type === 'photo') {
+      emit(doc.date, {
+        _id: doc._id,
+        title: doc.title,
+        date: doc.date,
+        content: doc.content
+      })
+    }
+  }"
+
+photoCount:
+  map: function (doc) { if (doc.type === 'photo') { emit(doc._id, 1) }}
+  reduce: _count
+
+photoByBatch:
+  map: "function (doc) {
+    if (doc.type === 'photo' && doc.batch) {
+      emit(doc.batch, doc)
+    }
+  }"
+
+photoByAlbum:
+  map: "function (doc) {
+    if (doc.type === 'photo' && doc.album) {
+      emit(doc.album, {
+        _id: doc._id,
+        title: doc.title,
+        date: doc.date,
+        content: doc.content
+      })
+    }
+  }"
+
+photoByAlbumLean:
+  map: "function (doc) {
+    if (doc.type === 'photo' && doc.album) {
+      emit(doc.album, {
+        _id: doc._id
+      })
+    }
+  }"
+
+photoByAlbumCount:
+  map: function (doc) { if (doc.type === 'photo' && doc.album) { emit(doc.album, 1) }}
+  reduce: _count
+
+settingAll:
+  map: function (doc) { if (doc.type === 'setting') { emit(doc._id, doc) }}
+
+settingCount:
+  map: function (doc) { if (doc.type === 'setting') { emit(doc._id, 1) }}
+  reduce: _count
+
+placeTagAll:
+  map: "function (doc) {
+    if (doc.type === 'placetag') {
+      emit(doc.title, {
+        _id: doc._id,
+        title: doc.title,
+        icon: doc.icon
+      })
+    }
+  }"
+
+placeAll:
+  map: "function (doc) {
+    if (doc.type === 'place') {
+      emit(doc.title, {
+        _id: doc._id,
+        title: doc.title,
+        date: doc.date,
+        address: doc.address,
+        phone: doc.phone,
+        placetag: doc.placetag
+      })
+    }
+  }"
+
+placeCount:
+  map: function (doc) { if (doc.type === 'place') { emit(doc._id, 1) }}
+  reduce: _count
+
+placeByPlaceTag:
+  map: "function (doc) {
+    if (doc.type === 'place' && doc.placetag) {
+      emit(doc.placetag, {
+        _id: doc._id,
+        title: doc.title,
+        date: doc.date,
+        address: doc.address,
+        phone: doc.phone,
+        placetag: doc.placetag
+      })
+    }
+  }"
+
+placeByPlaceTagLean:
+  map: "function (doc) {
+    if (doc.type === 'place' && doc.placetag) {
+      emit(doc.placetag, {
+        _id: doc._id
+      })
+    }
+  }"
+
+placeByPlaceTagCount:
+  map: function (doc) { if (doc.type === 'place' && doc.placetag) { emit(doc.placetag, 1) }}
+  reduce: _count
+
+adCatAll:
+  map: "function (doc) {
+    if (doc.type === 'adcat') {
+      emit(doc.title, doc)
+    }
+  }"

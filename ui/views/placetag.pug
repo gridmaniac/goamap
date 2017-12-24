@@ -1,0 +1,39 @@
+extends layout
+
+block link
+  -var active = '/placetags'
+  
+block content
+  .row
+    .col-lg-8
+      .card
+        .header
+          if pending
+            legend Новая категория мест
+          else
+            legend #{title}
+        .content
+          form.form-horizontal(method='post')
+            .form-group
+              label.col-sm-2.control-label Название
+                star *
+              .col-sm-10
+                input.form-control(type='text' name='title' value=title autofocus)
+            .form-group
+              label.col-sm-2.control-label Ед. форма
+              .col-sm-10
+                input.form-control(type='text' name='singular' value=singular)
+            .form-group
+              label.col-sm-2.control-label Иконка
+              .col-sm-10
+                input.form-control.hidden#placetag-file(type='file')
+                input.form-control(type='hidden' name='icon' value=icon)
+                .btn.btn-wd.btn-info#placetag-icon
+                  img#placetag-img(src=icon)
+                  i.fa.fa-upload
+            .form-group
+              label.col-md-2
+              .col-sm-9
+                if !pending
+                  input(type='hidden' name='id' value=_id)
+                button.btn.btn-fill.btn-success(type='submit' formaction=pending ? '/placetags/new' : '/placetags/update') Сохранить категорию

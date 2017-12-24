@@ -1,0 +1,71 @@
+userByEmail:
+  map: function (doc) { if (doc.type === 'user' && doc.email) { emit(doc.email, doc) }}
+
+userAll:
+  map: "function (doc) {
+    if (doc.type === 'user') {
+      emit(doc.email, doc)
+    }
+  }"
+
+userAllSortDate:
+  map: "function (doc) {
+    if (doc.type === 'user') {
+      emit(doc.date, doc)
+    }
+  }"
+
+userCount:
+  map: function (doc) { if (doc.type === 'user') { emit(doc._id, 1) }}
+  reduce: _count
+
+userAdminCount:
+  map: function (doc) { if (doc.type === 'user' && doc.role === 1) { emit(doc._id, 1) }}
+  reduce: _count
+
+adAll:
+  map: "function (doc) {
+    if (doc.type === 'ad') {
+      emit(doc.date, {
+        _id: doc._id,
+        title: doc.title,
+        date: doc.date,
+        expireon: doc.expireon,
+        user: doc.user,
+        active: doc.active,
+        adcat: doc.adcat
+      })
+    }
+  }"
+
+adCount:
+  map: function (doc) { if (doc.type === 'ad') { emit(doc._id, 1) }}
+  reduce: _count
+
+adByAdCat:
+  map: "function (doc) {
+    if (doc.type === 'ad' && doc.adcat) {
+      emit(doc.adcat, {
+        _id: doc._id,
+        title: doc.title,
+        date: doc.date,
+        expireon: doc.expireon,
+        user: doc.user,
+        active: doc.active,
+        adcat: doc.adcat
+      })
+    }
+  }"
+
+adByAdCatLean:
+  map: "function (doc) {
+    if (doc.type === 'ad' && doc.adcat) {
+      emit(doc.adcat, {
+        _id: doc._id
+      })
+    }
+  }"
+
+adByAdCatCount:
+  map: function (doc) { if (doc.type === 'ad' && doc.adcat) { emit(doc.adcat, 1) }}
+  reduce: _count

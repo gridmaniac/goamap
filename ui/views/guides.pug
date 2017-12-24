@@ -1,0 +1,20 @@
+extends layout
+
+block link
+  -var active = '/guides'
+
+block content
+  .row
+    .col-lg-6
+      .card
+        .header
+          h4.title Структура путеводителя
+          p.category Изменения вносятся путем перетаскивания
+        .content.clearfix
+          .form-group
+            .dd
+          .form-group
+            a.btn.btn-wd.btn-success.pull-right(href='/guides/new')
+              span.btn-label
+                i.fa.fa-plus
+              |  Добавить раздел

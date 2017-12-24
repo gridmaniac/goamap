@@ -1,0 +1,53 @@
+extends layout
+
+block link
+  -var active = '/placetags'
+
+block content
+  .row
+    .col-lg-10
+      .card.clearfix
+        form.header(method='get')
+          .text-center
+            a.btn.btn-primary.btn-simple.btn-xs(href='/places' rel='tooltip' title='' data-original-title='Поиск мест')
+              i.fa.fa-search
+            a.btn.btn-danger.btn-simple.btn-xs#placetag-remove-checked(href='#' rel='tooltip' title='' data-original-title='Удалить выбранные')
+              i.fa.fa-trash-o
+        .content.table-full-width
+          table.table.table-hover.table-bigboy
+            thead
+              tr
+                th
+                  label.checkbox
+                    span.icons
+                      span.first-icon.fa.fa-square-o
+                      span.second-icon.fa.fa-check-square-o
+                    input#check-all(type='checkbox' value='' data-toggle='checkbox' disabled=!placetags || placetags.length == 0)
+                th Маркер
+                th Название
+                th.text-right Действия
+            tbody
+              if (!placetags || placetags.length == 0)
+                tr  
+                  td(colspan='2')
+                  td(colspan='2') Нет категорий мест
+              else
+                each placetag in placetags
+                  tr
+                    td
+                      label.checkbox
+                        span.icons
+                          span.first-icon.fa.fa-square-o
+                          span.second-icon.fa.fa-check-square-o
+                        input(type='checkbox' value=placetag._id data-toggle='checkbox')
+                    td
+                      img(src=placetag.icon)
+                    td.td-name
+                      a(href=`/places?placetag=${placetag._id}`) #{placetag.title}
+                    td.td-actions.text-right
+                      a.btn.btn-danger.btn-simple.btn-xs.placetag-remove(href=`#` data-id=placetag._id rel='tooltip' title='' data-original-title='Удалить')
+                        i.fa.fa-trash-o
+                      a.btn.btn-success.btn-simple.btn-xs(href=`/placetags/${placetag._id}` rel='tooltip' title='' data-original-title='Редактировать')
+                        i.fa.fa-edit
+          .content.text-right
+            a.btn.btn-fill.btn-success(href='/placetags/new') Новая категория

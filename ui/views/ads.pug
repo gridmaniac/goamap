@@ -1,0 +1,77 @@
+extends layout
+
+block link
+  -var active = '/adcats'
+
+block content
+  .row
+    .col-lg-10
+      .card.clearfix
+        form.header(method='get')
+          .search.pull-left
+            input.form-control(type='text' adholder='Поиск' name='like' value=query.like autofocus)
+          .pull-right.hidden-xs
+            select.form-control(name='adcat' onchange='this.form.submit()')
+              option(value='') Все
+              each adcat in adcats
+                option(value=adcat._id selected=query.adcat==adcat._id) #{adcat.title}
+          .text-center
+            if (query.adcat)
+                a.btn.btn-primary.btn-simple.btn-xs(href=`/ads/new?adcat=${query.adcat}` rel='tooltip' title='' data-original-title='Добавить объявление')
+                  i.fa.fa-plus
+            a.btn.btn-success.btn-simple.btn-xs(data-toggle='modal' data-target='#adcat-picker' rel='tooltip' title='' data-original-title='Переместить в другую категорию')
+                i.fa.fa-folder
+            a.btn.btn-danger.btn-simple.btn-xs#ad-remove-checked(href='#' rel='tooltip' title='' data-original-title='Удалить выбранные')
+              i.fa.fa-trash-o
+        .content.table-full-width
+          table.table.table-hover.table-bigboy
+            thead
+              tr
+                th
+                  label.checkbox
+                    span.icons
+                      span.first-icon.fa.fa-square-o
+                      span.second-icon.fa.fa-check-square-o
+                    input#check-all(type='checkbox' value='' data-toggle='checkbox' disabled=!ads || ads.length == 0)
+                th Название
+                th Категория
+                th Пользователь
+                th.hidden-xs Опубликовано
+                th.hidden-xs До
+                th.hidden-xs Активно
+                th.text-right Действия
+            tbody
+              if (!ads || ads.length == 0)
+                tr  
+                  td(colspan='1')
+                  td(colspan='6') Объвлений не найдено
+              else
+                each ad in ads
+                  tr
+                    td
+                      label.checkbox
+                        span.icons
+                          span.first-icon.fa.fa-square-o
+                          span.second-icon.fa.fa-check-square-o
+                        input(type='checkbox' value=ad._id data-toggle='checkbox')
+                    td.td-name
+                      a(href=`/ads/${ad._id}`) #{ad.title}
+                    td
+                      each adcat in adcats
+                        if (adcat._id == ad.adcat)
+                          a(href=`/ads?adcat=${adcat._id}`) #{adcat.title}
+                    td #{ad.user}
+                    td.hidden-xs=moment(ad.date).format('DD.MM.YY HH:mm:ss')
+                    td.hidden-xs=moment(ad.expireon).format('DD.MM.YY HH:mm:ss')
+                    if (ad.active)
+                      td Да
+                    else
+                      td Нет
+                    td.td-actions.text-right
+                      a.btn.btn-danger.btn-simple.btn-xs.ad-remove(href=`#` data-id=ad._id rel='tooltip' title='' data-original-title='Удалить')
+                        i.fa.fa-trash-o
+                      a.btn.btn-success.btn-simple.btn-xs(href=`/ads/${ad._id}` rel='tooltip' title='' data-original-title='Редактировать')
+                        i.fa.fa-edit
+          .text-center
+            include modules/pagination
+          include modules/adcat-picker

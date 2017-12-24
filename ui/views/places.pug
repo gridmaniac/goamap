@@ -1,0 +1,71 @@
+extends layout
+
+block link
+  -var active = '/placetags'
+
+block content
+  .row
+    .col-lg-10
+      .card.clearfix
+        form.header(method='get')
+          .search.pull-left
+            input.form-control(type='text' placeholder='Поиск' name='like' value=query.like autofocus)
+          .pull-right.hidden-xs
+            select.form-control(name='placetag' onchange='this.form.submit()')
+              option(value='') Все
+              each placetag in placetags
+                option(value=placetag._id selected=query.placetag==placetag._id) #{placetag.title}
+          .text-center
+            if (query.placetag)
+                a.btn.btn-primary.btn-simple.btn-xs(href=`/places/new?placetag=${query.placetag}` rel='tooltip' title='' data-original-title='Добавить место')
+                  i.fa.fa-plus
+            a.btn.btn-success.btn-simple.btn-xs(data-toggle='modal' data-target='#placetag-picker' rel='tooltip' title='' data-original-title='Переместить в другую категорию')
+                i.fa.fa-folder
+            a.btn.btn-danger.btn-simple.btn-xs#place-remove-checked(href='#' rel='tooltip' title='' data-original-title='Удалить выбранные')
+              i.fa.fa-trash-o
+        .content.table-full-width
+          table.table.table-hover.table-bigboy
+            thead
+              tr
+                th
+                  label.checkbox
+                    span.icons
+                      span.first-icon.fa.fa-square-o
+                      span.second-icon.fa.fa-check-square-o
+                    input#check-all(type='checkbox' value='' data-toggle='checkbox' disabled=!places || places.length == 0)
+                th Название
+                th Категория
+                th.hidden-xs Адрес
+                th.hidden-xs Телефон
+                th.text-right Действия
+            tbody
+              if (!places || places.length == 0)
+                tr  
+                  td(colspan='1')
+                  td(colspan='5') Мест не найдено
+              else
+                each place in places
+                  tr
+                    td
+                      label.checkbox
+                        span.icons
+                          span.first-icon.fa.fa-square-o
+                          span.second-icon.fa.fa-check-square-o
+                        input(type='checkbox' value=place._id data-toggle='checkbox')
+                    td.td-name
+                      a(href=`/places/${place._id}`) #{place.title}
+                    td
+                      each placetag in placetags
+                        if (placetag._id == place.placetag)
+                          a(href=`/places?placetag=${placetag._id}`) #{placetag.title}
+                    td.hidden-xs #{place.address}
+                    td.hidden-xs #{place.phone}
+                    td.td-actions.text-right
+                      a.btn.btn-danger.btn-simple.btn-xs.place-remove(href=`#` data-id=place._id rel='tooltip' title='' data-original-title='Удалить')
+                        i.fa.fa-trash-o
+                      a.btn.btn-success.btn-simple.btn-xs(href=`/places/${place._id}` rel='tooltip' title='' data-original-title='Редактировать')
+                        i.fa.fa-edit
+          .text-center
+            include modules/pagination
+          include modules/upload
+          include modules/placetag-picker

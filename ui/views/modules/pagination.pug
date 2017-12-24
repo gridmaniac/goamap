@@ -1,0 +1,31 @@
+if paginate
+  if paginate.hasPreviousPages || paginate.hasNextPages(pageCount)
+    ul.pagination
+      if paginate.hasPreviousPages
+        li.page-first
+          a(href=paginate.href({ page: 1 })) «
+        li.page-pre
+          a(href=paginate.href(true)) ‹
+      else
+        li.page-first.disabled
+          a(href='javascript:void(0)') «
+        li.page-pre.disabled
+          a(href='javascript:void(0)') ‹
+      if pages
+        each page in pages
+          if page.number == currentPage
+            li.page-number.active
+              a(href=page.url)= page.number
+          else
+            li.page-number
+              a(href=page.url)= page.number
+      if paginate.hasNextPages(pageCount)
+        li.page-next
+          a(href=paginate.href()) ›
+        li.page-last
+          a(href=paginate.href({ page: pageCount })) »
+      else
+        li.page-next.disabled
+          a(href='javascript:void(0)') ›
+        li.page-last.disabled
+          a(href='javascript:void(0)') »

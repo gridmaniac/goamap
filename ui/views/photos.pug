@@ -1,0 +1,68 @@
+extends layout
+
+block link
+  -var active = '/albums'
+
+block content
+  .row
+    .col-lg-10
+      .card.clearfix
+        form.header(method='get')
+          .search.pull-left
+            input.form-control(type='text' placeholder='Поиск' name='like' value=query.like autofocus)
+          .pull-right.hidden-xs
+            select.form-control(name='album' onchange='this.form.submit()')
+              option(value='') Все
+              each album in albums
+                option(value=album._id selected=query.album==album._id) #{album.title}
+          .text-center
+            if (query.album)
+              a.btn.btn-primary.btn-simple.btn-xs(data-toggle='modal' data-target='#upload' rel='tooltip' title='' data-original-title='Загрузить фотографии')
+                i.fa.fa-upload
+            a.btn.btn-success.btn-simple.btn-xs(data-toggle='modal' data-target='#album-picker' rel='tooltip' title='' data-original-title='Переместить в другой альбом')
+                i.fa.fa-folder
+            a.btn.btn-danger.btn-simple.btn-xs#photo-remove-checked(href='#' rel='tooltip' title='' data-original-title='Удалить выбранные')
+              i.fa.fa-trash-o
+        .content.table-full-width
+          table.table.table-hover.table-bigboy
+            thead
+              tr
+                th
+                  label.checkbox
+                    span.icons
+                      span.first-icon.fa.fa-square-o
+                      span.second-icon.fa.fa-check-square-o
+                    input#check-all(type='checkbox' value='' data-toggle='checkbox' disabled=!photos || photos.length == 0)
+                th Фото
+                th.hidden-xs Название
+                th.hidden-xs Добавлено
+                th.text-right Действия
+            tbody
+              if (!photos || photos.length == 0)
+                tr  
+                  td(colspan='1')
+                  td(colspan='4') Нет фотографий
+              else
+                each photo in photos
+                  tr
+                    td
+                      label.checkbox
+                        span.icons
+                          span.first-icon.fa.fa-square-o
+                          span.second-icon.fa.fa-check-square-o
+                        input(type='checkbox' value=photo._id data-toggle='checkbox')
+                    td
+                      .img-container
+                        a(data-fancybox='gallery' href='/photo/' + photo._id)
+                          img(src='/photo/' + photo._id)
+                    td.td-name.hidden-xs #{photo.title}
+                    td.hidden-xs=moment(photo.date).format('DD.MM.YY HH:mm:ss')
+                    td.td-actions.text-right
+                      a.btn.btn-danger.btn-simple.btn-xs.photo-remove(href=`#` data-id=photo._id rel='tooltip' title='' data-original-title='Удалить')
+                        i.fa.fa-trash-o
+                      a.btn.btn-success.btn-simple.btn-xs(href=`/photos/${photo._id}` rel='tooltip' title='' data-original-title='Редактировать')
+                        i.fa.fa-edit
+          .text-center
+            include modules/pagination
+          include modules/upload
+          include modules/album-picker

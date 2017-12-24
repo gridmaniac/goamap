@@ -1,0 +1,50 @@
+extends layout
+
+block link
+  -var active = '/albums'
+  
+block content
+  .row
+    .col-lg-8
+      .card
+        .header
+          legend #{title}
+        .content
+          form.form-horizontal(method='post')
+            .form-group
+              label.col-sm-2.control-label Название
+                star *
+              .col-sm-10
+                input.form-control(type='text' name='title' value=title autofocus)
+            .form-group
+              label.col-sm-2.control-label Имя файла
+              .col-sm-10
+                input.form-control(type='text' name='name' value=name)
+            .form-group
+              label.col-sm-2.control-label Фото
+              .col-sm-10
+                input#preview(type='hidden' name='content' value=content)
+                .image-preview
+                  a(data-fancybox='gallery' href='/photo/' + _id)
+                    img(src='/photo/' + _id)
+                br
+                input#update-photo(type='file')
+            .form-group
+              label.col-sm-2.control-label Альбом
+              .col-sm-10
+                select.form-control(name='album')
+                  each a in albums
+                    option(value=a._id selected=album==a._id) #{a.title}
+            .form-group
+              label.col-sm-2.control-label Номер пакета
+              .col-sm-10
+                input.form-control(type='text' name='batch' value=batch)
+            .form-group
+              label.col-sm-2.control-label Геоданные
+              .col-sm-10
+                input.form-control(type='text' name='geo' value=geo)
+            .form-group
+              label.col-md-2
+              .col-sm-9
+                input(type='hidden' name='id' value=_id)
+                button.btn.btn-fill.btn-success(type='submit' formaction='/photos/update') Сохранить фото

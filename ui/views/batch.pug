@@ -1,0 +1,55 @@
+extends layout
+
+block link
+  -var active = '/albums'
+
+block content
+  .row
+    .col-lg-10
+      .card.clearfix
+        .content.table-full-width
+          table.table.table-hover.table-bigboy
+            thead
+              tr
+                th Фото
+                th Метаданные
+                th Привязка к месту
+                th Действия
+            tbody
+              if (!photos || photos.length == 0)
+                tr
+                  td(colspan='4') Обработка завершена
+              else
+                each photo in photos
+                  tr(data-id=photo._id)
+                    td
+                      .img-container
+                        a(data-fancybox='gallery' href=`/photo/${photo._id}`)
+                          img(src=`/photo/${photo._id}`)
+                    td
+                      .form-horizontal
+                        .form-group
+                          label.col-sm-4.control-label Название
+                            star * 
+                          .col-sm-7
+                            input.form-control(type='text' name='title' value=photo.title)
+                        .form-group
+                          label.col-sm-4.control-label Альбом
+                          .col-sm-7
+                            input.form-control(type='text' name='album' value=photo.album)
+                    td
+                      .form-horizontal
+                        .form-group
+                          label.col-sm-4.control-label Категория мест
+                          .col-sm-7
+                            input.form-control(type='text' name='placetag')
+                        .form-group
+                          label.col-sm-4.control-label Место
+                          .col-sm-7
+                            input.form-control(type='text' name='place')
+                    td
+                      .form-horizontal
+                        .form-group
+                          .btn.btn-success Принять
+                        .form-group
+                          .btn.btn-danger Удалить

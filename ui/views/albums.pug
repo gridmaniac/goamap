@@ -1,0 +1,66 @@
+extends layout
+
+block link
+  -var active = '/albums'
+
+block content
+  .row
+    .col-lg-10
+      .card.clearfix
+        form.header(method='get')
+          .search.pull-left
+            input.form-control(type='text' placeholder='Поиск' name='like' value=query.like autofocus)
+          .pull-right.hidden-xs
+            select.form-control(name='sort' onchange='this.form.submit()')
+              option(value='') По названию
+              option(value='date-desc' selected=query.sort=='date-desc') По дате (последние)
+              option(value='date' selected=query.sort=='date') По дате (поздние)
+          .text-center
+            a.btn.btn-primary.btn-simple.btn-xs(href='/photos' rel='tooltip' title='' data-original-title='Поиск фотографий')
+              i.fa.fa-search
+            a.btn.btn-danger.btn-simple.btn-xs#album-remove-checked(href='#' rel='tooltip' title='' data-original-title='Удалить выбранные')
+              i.fa.fa-trash-o
+        .content.table-full-width
+          table.table.table-hover.table-bigboy
+            thead
+              tr
+                th
+                  label.checkbox
+                    span.icons
+                      span.first-icon.fa.fa-square-o
+                      span.second-icon.fa.fa-check-square-o
+                    input#check-all(type='checkbox' value='' data-toggle='checkbox' disabled=!albums || albums.length == 0)
+                th 
+                th Название
+                th.hidden-xs Дата создания
+                th.hidden-xs Описание
+                th.text-right Действия
+            tbody
+              if (!albums || albums.length == 0)
+                tr  
+                  td(colspan='2')
+                  td(colspan='4') Нет добавленных альбомов
+              else
+                each album in albums
+                  tr
+                    td
+                      label.checkbox
+                        span.icons
+                          span.first-icon.fa.fa-square-o
+                          span.second-icon.fa.fa-check-square-o
+                        input(type='checkbox' value=album._id data-toggle='checkbox')
+                    td
+                      i.fa.fa-folder.text-warning
+                    td.td-name
+                      a(href=`/photos?album=${album._id}`) #{album.title}
+                    td.hidden-xs=moment(album.date).format('DD.MM.YY HH:mm:ss')
+                    td.hidden-xs #{album.description}
+                    td.td-actions.text-right
+                      a.btn.btn-danger.btn-simple.btn-xs.album-remove(href=`#` data-id=album._id rel='tooltip' title='' data-original-title='Удалить')
+                        i.fa.fa-trash-o
+                      a.btn.btn-success.btn-simple.btn-xs(href=`/albums/${album._id}` rel='tooltip' title='' data-original-title='Редактировать')
+                        i.fa.fa-edit
+          .text-center
+            include modules/pagination
+          .content.text-right
+            a.btn.btn-fill.btn-success(href='/albums/new') Новый альбом

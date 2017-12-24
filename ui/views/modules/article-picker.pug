@@ -1,0 +1,22 @@
+.modal.fade#article-picker
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(data-dismiss='modal')
+          span ×
+        .modal-title Выбор ресурса
+      .modal-body
+        .form-group
+          label Поиск статьи
+          input.form-control#article-search(type='text')
+        br
+        .form-group
+          table.table.table-hover
+            thead
+              tr
+                th Название
+            tbody#articles
+              tr
+                td Нет результатов
+      .modal-footer
+        button.btn.btn-secondary(data-dismiss='modal') Закрыть

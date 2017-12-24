@@ -1,0 +1,67 @@
+extends layout
+
+block link
+  -var active = '/adcats'
+  
+block content
+  .row
+    .col-lg-8
+      .card
+        .header
+          if pending
+            legend Новое место
+          else
+            legend #{title}
+        .content
+          form.form-horizontal(method='post')
+            .form-group
+              label.col-sm-2.control-label Название
+                star *
+              .col-sm-10
+                input.form-control(type='text' name='title' value=title autofocus)
+            .form-group
+              label.col-sm-2.control-label Категория
+              .col-sm-10
+                select.form-control(name='adcat')
+                  each a in adcats
+                    option(value=a._id selected=adcat==a._id) #{a.title}
+            .form-group
+              label.col-sm-2.control-label Описание
+              .col-sm-10
+                textarea.form-control(name='description') #{description}
+            .form-group
+              label.col-sm-2.control-label Фотографии
+              .col-sm-10
+                #photos-container
+                  if (photos)
+                    each photo in photos.split(',')
+                      a.photo(data-fancybox='gallery' href=photo)
+                        img(src=photo)
+            .form-group
+              label.col-sm-2.control-label Адрес
+              .col-sm-10
+                input.form-control(type='text' name='address' value=address)
+            .form-group
+              label.col-sm-2.control-label Телефон
+              .col-sm-10
+                input.form-control(type='text' name='phone' value=phone)
+            .form-group
+              label.col-sm-2.control-label Цена услуги
+                star *
+              .col-sm-10
+                input.form-control(type='number' name='price' value=price)
+            .form-group
+              label.col-sm-2.control-label Пользователь
+              .col-sm-10
+                .form-control #{user}
+            .form-group
+              label.col-sm-2.control-label До
+              .col-sm-10
+                input.form-control(type='date' name='expireon' value=expireon)
+            .form-group
+              label.col-md-2
+              .col-sm-9
+                if !pending
+                  input(type='hidden' name='id' value=_id)
+                button.btn.btn-fill.btn-success(type='submit' formaction=pending ? '/ads/new' : '/ads/update') Сохранить
+        include modules/photo-picker

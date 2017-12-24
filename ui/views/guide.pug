@@ -1,0 +1,63 @@
+extends layout
+
+block link
+  -var active = '/guides'
+
+block content
+  .row
+    .col-lg-8
+      .card
+        .header
+          if pending
+            legend Новый раздел
+          else
+            legend #{title}
+        .content
+          form.form-horizontal(method='post')
+            .form-group
+              label.col-sm-2.control-label Название
+                star *
+              .col-sm-10
+                input.form-control(type='text' name='title' value=title autofocus)
+            .form-group
+              label.col-sm-2.control-label Описание
+                star *
+              .col-sm-10
+                input.form-control(type='text' name='description' value=description)
+            .form-group
+              label.col-sm-2.control-label Иконка
+              .col-sm-10
+                input.form-control.hidden#guide-file(type='file')
+                input.form-control(type='hidden' name='icon' value=icon)
+                .btn.btn-wd.btn-info#guide-icon
+                  img#guide-img(src=icon)
+                  i.fa.fa-upload
+            .form-group
+              label.col-sm-2.control-label Ведет на
+              .col-sm-10
+                select.form-control(name='guides')
+                  option(value='') - Подразделы -
+                  option(value='article' selected=guides=='article') Статью
+                  option(value='place' selected=guides=='place') Место
+                  option(value='hyperlink' selected=guides=='hyperlink') Ссылку
+            .form-group.resource#select-article(style=guides!='article'?'display:none': '')
+              label.col-sm-2.control-label Ресурс
+              .col-sm-10
+                a.form-control-static(href='#' data-toggle='modal' data-target='#article-picker')=extra || 'Выбрать'
+            .form-group.resource#select-place(style=guides!='place'?'display:none': '')
+              label.col-sm-2.control-label Ресурс
+              .col-sm-10
+                a.form-control-static(href='#' data-toggle='modal' data-target='#place-picker')=extra || 'Выбрать'
+            .form-group.resource#hyperlink(style=guides!='hyperlink'?'display:none': '')
+              label.col-sm-2.control-label Ресурс
+              .col-sm-10
+                input.form-control#set-hyperlink(type='text' value=resource)
+            input#resource(type='hidden' name='resource' value=resource)
+            .form-group
+              label.col-md-2
+              .col-sm-9
+                if !pending
+                  input(type='hidden' name='id' value=_id)
+                button.btn.btn-fill.btn-success(type='submit' formaction=pending ? '/guides/new' : '/guides/update') Сохранить раздел
+          include modules/article-picker
+          include modules/place-picker

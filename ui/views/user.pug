@@ -1,0 +1,42 @@
+extends layout
+
+block link
+  -var active = '/users'
+  
+block content
+  .row
+    .col-lg-8
+      .card
+        .header
+          legend #{name}
+        .content
+          form.form-horizontal(method='post')
+            .form-group
+              label.col-sm-2.control-label Email
+                star *
+              .col-sm-10
+                input.form-control(type='text' name='email' value=email autofocus)
+            .form-group
+              label.col-sm-2.control-label Имя
+              .col-sm-10
+                input.form-control(type='text' name='name' value=name)
+            .form-group
+              label.col-sm-2.control-label Роль
+              .col-sm-10
+                select.form-control(name='role')
+                  option(value='0' selected=role==0) Пользователь
+                  option(value='1' selected=role==1) Администратор
+            .form-group
+              label.col-sm-2.control-label Телефон
+              .col-sm-10
+                input.form-control(type='text' name='phone' value=phone)
+            .form-group
+              label.col-sm-2.control-label Баланс
+              .col-sm-10
+                input.form-control(type='number' name='balance' value=balance)
+            .form-group
+              label.col-md-2
+              .col-sm-9
+                if !pending
+                  input(type='hidden' name='id' value=_id)
+                button.btn.btn-fill.btn-success(type='submit' formaction='/users/update') Сохранить

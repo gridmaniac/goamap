@@ -1,0 +1,17 @@
+block footer
+  footer.footer
+    .container-fluid
+      nav.pull-left
+        ul
+          li
+            a(href='/')
+              | Статистика
+          li
+            a(href='/settings')
+              | Настройки
+      p.copyright.pull-right
+        | © 
+        script.
+          document.write(new Date().getFullYear())
+        a(href='http://rocke.tech/')  ROCKETECH
+        | , made with love

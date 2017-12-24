@@ -1,0 +1,22 @@
+.modal.fade#place-picker
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(data-dismiss='modal')
+          span ×
+        .modal-title Выбор ресурса
+      .modal-body
+        .form-group
+          label Поиск места
+          input.form-control#place-search(type='text')
+        br
+        .form-group
+          table.table.table-hover
+            thead
+              tr
+                th Название
+            tbody#places
+              tr
+                td Нет результатов
+      .modal-footer
+        button.btn.btn-secondary(data-dismiss='modal') Закрыть

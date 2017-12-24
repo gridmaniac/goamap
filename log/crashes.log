@@ -1,0 +1,809 @@
+03:25:55 - error: [couchdb\index.js]  Error: Document not found
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:408:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:37:13 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:37:14 - error: [couchdb\index.js]  Error: Document not found
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:408:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:37:54 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:37:54 - error: [couchdb\index.js]  Error: Document not found
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:408:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:38:08 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:38:08 - error: [couchdb\index.js]  Error: Document not found
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:408:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:38:17 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:38:17 - error: [couchdb\index.js]  Error: Document not found
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:408:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:38:32 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:38:32 - error: [couchdb\index.js]  Error: Document not found
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:408:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:38:39 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:38:45 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:38:49 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:38:52 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:38:56 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:39:02 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:39:06 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:39:12 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:39:36 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:51:12 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:53:13 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+03:53:24 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:00:45 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:00:48 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:04:39 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:05:44 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:07:39 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:07:47 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:12:17 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:12:21 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:12:33 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:12:35 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:15:37 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:15:49 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:21:00 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:21:37 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:21:47 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:22:34 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:23:31 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:23:36 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:23:58 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:24:07 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:24:11 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:25:08 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:25:11 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:28:20 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:29:09 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:30:36 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:38:29 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:58:09 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+04:58:12 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+05:45:52 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+05:48:11 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+05:50:23 - error: [routes\settings.js]  TypeError: Cannot read property 'value' of undefined
+    at __dirname.getAll (C:\Projects\goa\models\setting.js:27:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+05:50:28 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+05:56:49 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+05:58:35 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:01:17 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:04:13 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:04:34 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:06:03 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:06:19 - error: [routes\users.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:07:07 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:07:12 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:07:46 - error: [routes\users.js]  ReferenceError: moment is not defined
+    at router.get (C:\Projects\goa\routes\users.js:47:13)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:08:22 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:09:48 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:10:06 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:10:20 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:10:45 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:11:01 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:15:28 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:16:13 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:16:23 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:16:43 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:38:32 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:42:29 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:42:31 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:44:38 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:46:18 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:46:52 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+06:47:23 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:04:15 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:06:06 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:08:42 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:09:06 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:09:40 - error: [routes\batch.js]  ReferenceError: limit is not defined
+    at Object.__dirname.getByBatch (C:\Projects\goa\models\photo.js:42:9)
+    at router.get (C:\Projects\goa\routes\batch.js:17:36)
+    at dispatch (C:\Projects\goa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Projects\goa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Projects\goa\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (C:\Projects\goa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Projects\goa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at __dirname.isAdminAuthenticated (C:\Projects\goa\summons\auth\index.js:28:16)
+    at dispatch (C:\Projects\goa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Projects\goa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+07:10:11 - error: [routes\batch.js]  ReferenceError: limit is not defined
+    at Object.__dirname.getByBatch (C:\Projects\goa\models\photo.js:42:9)
+    at router.get (C:\Projects\goa\routes\batch.js:17:36)
+    at dispatch (C:\Projects\goa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Projects\goa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Projects\goa\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (C:\Projects\goa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Projects\goa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at __dirname.isAdminAuthenticated (C:\Projects\goa\summons\auth\index.js:28:16)
+    at dispatch (C:\Projects\goa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Projects\goa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+07:10:41 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:11:42 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:18:54 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:20:53 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:20:57 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:34:13 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:34:15 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:34:18 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:35:50 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:36:23 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:36:32 - error: [routes\albums.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:36:33 - error: [routes\albums.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:36:39 - error: [routes\albums.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:36:43 - error: [routes\albums.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:36:45 - error: [routes\albums.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:36:48 - error: [routes\albums.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:36:48 - error: [routes\albums.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:37:38 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:37:55 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:37:58 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:38:33 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:38:40 - error: [routes\placetags.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:38:41 - error: [routes\placetags.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:38:43 - error: [routes\placetags.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:38:51 - error: [routes\places.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:38:53 - error: [routes\places.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:47:46 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:49:53 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:50:35 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:52:38 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:54:42 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+07:55:13 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:00:06 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:07:21 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:07:25 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:07:40 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:08:21 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:10:38 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:10:47 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:10:50 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:11:02 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:11:08 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:11:24 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:11:27 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:11:31 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:11:46 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:27:24 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:27:28 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:27:31 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:54:49 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:54:55 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:56:10 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+08:56:28 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+09:00:30 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+09:01:08 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+09:01:31 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+09:01:43 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+09:01:59 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+09:05:26 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+09:24:01 - error: [routes\albums.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+09:24:03 - error: [routes\albums.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+09:24:04 - error: [routes\albums.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+09:24:08 - error: [routes\albums.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+09:24:11 - error: [routes\placetags.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+09:24:14 - error: [routes\places.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+09:24:20 - error: [routes\places.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+09:24:23 - error: [routes\places.js]  Error: Document is not found
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:180:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+09:25:20 - error: [routes\ads.js]  TypeError: photos.split is not a function
+    at eval (eval at wrap (C:\Projects\goa\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:77:22)
+    at eval (eval at wrap (C:\Projects\goa\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:91:4)
+    at template (eval at wrap (C:\Projects\goa\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:98:2760)
+    at compileFile (C:\Projects\goa\node_modules\koa-pug\src\pug.js:60:12)
+    at renderer (C:\Projects\goa\node_modules\koa-pug\src\pug.js:92:12)
+    at Object.contextRenderer [as render] (C:\Projects\goa\node_modules\koa-pug\src\pug.js:106:17)
+    at router.get (C:\Projects\goa\routes\ads.js:97:13)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+01:12:59 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+01:13:07 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+01:13:09 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+01:14:40 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+15:03:33 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+10:52:54 - error: [couchdb\index.js]  Error: Document insert conflict
+    at NodeCouchDB._checkDocumentManipulationStatus (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:412:19)
+    at _requestWrapped.then (C:\Projects\goa\node_modules\node-couchdb\dist\es2015.js:222:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)

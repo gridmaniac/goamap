@@ -1,0 +1,24 @@
+.modal.fade#photo-selector
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(data-dismiss='modal')
+          span ×
+        .modal-title Выбор фото
+      .modal-body
+        .form-group
+          label Поиск фотографий
+          input.form-control#photo-search(type='text')
+        br
+        .form-group
+          table.table.table-hover.table-bigboy
+            thead
+              tr
+                th Фото
+                th Название
+            tbody#photos
+              tr
+                td
+                td Нет результатов
+      .modal-footer
+        button.btn.btn-secondary(data-dismiss='modal') Закрыть

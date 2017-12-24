@@ -1,0 +1,104 @@
+extends layout
+
+block link
+  -var active = '/placetags'
+  
+block content
+  .row
+    .col-lg-8
+      .card
+        .header
+          if pending
+            legend Новое место
+          else
+            legend #{title}
+        .content
+          form.form-horizontal(method='post')
+            .form-group
+              label.col-sm-2.control-label Название
+                star *
+              .col-sm-10
+                input.form-control(type='text' name='title' value=title autofocus)
+            .form-group
+              label.col-sm-2.control-label Категория
+              .col-sm-10
+                select.form-control(name='placetag')
+                  each p in placetags
+                    option(value=p._id selected=placetag==p._id) #{p.title}
+            .form-group
+              label.col-sm-2.control-label Описание
+              .col-sm-10
+                textarea.form-control(name='description') #{description}
+            .form-group
+              label.col-sm-2.control-label Теги
+              .col-sm-10
+                input.form-control(type='text' name='tags' value=tags)
+            .form-group
+              label.col-sm-2.control-label Широта
+                star *
+              .col-sm-10
+                input.form-control#latitude(type='text' name='latitude' value=latitude)
+            .form-group
+              label.col-sm-2.control-label Долгота
+                star *
+              .col-sm-10
+                input.form-control#longitude(type='text' name='longitude' value=longitude)
+            .form-group
+              label.col-sm-2.control-label Карта
+              .col-sm-10
+                #map(data-zoom=zoom data-icon=icon)
+            .form-group
+              label.col-sm-2.control-label Фотографии
+              .col-sm-10
+                input.form-control.hidden#photo-files(type='file' multiple)
+                .btn.btn-primary#upload-photos Загрузить
+                | &nbsp;
+                a.btn.btn-success#select-photos(data-toggle='modal' data-target='#photo-picker') Выбрать
+                input(type='hidden' name='photos' value=photos)
+                #photos-container(data-placetag=placetag)
+                  if (photos)
+                    each photo in photos.split(',')
+                      a.photo(data-fancybox='gallery' href=`/photo/${photo}`)
+                        img(src=`/photo/${photo}`)
+            .form-group
+              label.col-sm-2.control-label Статья
+              .col-sm-10
+                a.form-control-static(href="/") О новых модных штуках
+            .form-group
+              label.col-sm-2.control-label Адрес
+              .col-sm-10
+                input.form-control(type='text' name='address' value=address)
+            .form-group
+              label.col-sm-2.control-label Телефон
+              .col-sm-10
+                input.form-control(type='text' name='phone' value=phone)
+            .form-group
+              label.col-sm-2.control-label Веб-сайт
+              .col-sm-10
+                input.form-control(type='text' name='website' value=website)
+            .form-group
+              label.col-sm-2.control-label Рабочие часы / с
+              .col-sm-10
+                input.form-control(type='time' name='workstart' value=workstart)
+            .form-group
+              label.col-sm-2.control-label Рабочие часы / до
+              .col-sm-10
+                input.form-control(type='time' name='workend' value=workend)
+            .form-group
+              label.col-sm-2.control-label Нерабочие дни
+              .col-sm-10
+                select.form-control(name='workoff' size=7 multiple)
+                  option(value='1' selected=workoff && workoff.includes('1')) Понедельник
+                  option(value='2' selected=workoff && workoff.includes('2')) Вторник
+                  option(value='3' selected=workoff && workoff.includes('3')) Среда
+                  option(value='4' selected=workoff && workoff.includes('4')) Четверг
+                  option(value='5' selected=workoff && workoff.includes('5')) Пятница
+                  option(value='6' selected=workoff && workoff.includes('6')) Суббота
+                  option(value='7' selected=workoff && workoff.includes('7')) Воскресенье
+            .form-group
+              label.col-md-2
+              .col-sm-9
+                if !pending
+                  input(type='hidden' name='id' value=_id)
+                button.btn.btn-fill.btn-success(type='submit' formaction=pending ? '/places/new' : '/places/update') Сохранить
+        include modules/photo-picker

@@ -1,0 +1,67 @@
+extends layout
+
+block link
+  -var active = '/statistics'
+
+block content
+  script.
+    $(document).ready(function() {
+      demo.initChartist()
+    })
+  .row
+    .col-md-4
+      .card
+        .header
+          h4.title Пользователи
+          p.category По странам
+        .content
+          #chartPreferences.ct-chart.ct-perfect-fourth
+          .footer
+            .legend
+              i.fa.fa-circle.text-info  
+              |  Гоа 
+              i.fa.fa-circle.text-danger  
+              |  Китай 
+              i.fa.fa-circle.text-warning  
+              |  Россия 
+            hr
+            .stats
+              i.fa.fa-clock-o
+              |  С момента последней регистрации
+    .col-md-8
+      .card
+        .header
+          h4.title Доход на 2017
+          p.category с объявлений
+        .content
+          #chartActivity.ct-chart
+          .footer
+            .legend
+              i.fa.fa-circle.text-info  
+              |  Потенциальный  
+              i.fa.fa-circle.text-danger  
+              |  Фактический
+            hr
+            .stats
+              i.fa.fa-check
+              |  Только подтвержденные платежи
+  .row
+    .col-md-12
+      .card
+        .header
+          h4.title Поведение пользователей
+          p.category За последний месяц
+        .content
+          #chartHours.ct-chart
+          .footer
+            .legend
+              i.fa.fa-circle.text-info
+              |  Карта 
+              i.fa.fa-circle.text-danger
+              |  Путеводитель 
+              i.fa.fa-circle.text-warning
+              |  Объявления
+            hr
+            .stats
+              i.fa.fa-history
+              |  Обновлено только что

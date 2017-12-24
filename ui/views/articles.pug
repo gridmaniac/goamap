@@ -1,0 +1,63 @@
+extends layout
+
+block link
+  -var active = '/articles'
+
+block content
+  .row
+    .col-lg-10
+      .card.clearfix
+        form.header(method='get')
+          .search.pull-left
+            input.form-control(type='text' placeholder='Поиск' name='like' value=query.like autofocus)
+          .pull-right.hidden-xs
+            select.form-control(name='sort' onchange='this.form.submit()')
+              option(value='') По названию
+              option(value='date-desc' selected=query.sort=='date-desc') По дате (последние)
+              option(value='date' selected=query.sort=='date') По дате (поздние)
+          .text-center
+            a.btn.btn-success.btn-simple.btn-xs(href='#' rel='tooltip' title='' data-original-title='Добавить перевод')
+              i.fa.fa-language
+            a.btn.btn-danger.btn-simple.btn-xs#article-remove-checked(href='#' rel='tooltip' title='' data-original-title='Удалить выбранные')
+              i.fa.fa-trash-o
+        .content.table-full-width
+          table.table.table-hover
+            thead
+              tr
+                th
+                  label.checkbox
+                    span.icons
+                      span.first-icon.fa.fa-square-o
+                      span.second-icon.fa.fa-check-square-o
+                    input#check-all(type='checkbox' value='' data-toggle='checkbox' disabled=!articles || articles.length == 0)
+                th.hidden-xs Дата добавления
+                th Название статьи
+                th.hidden-xs Описание
+                th.text-right Действия
+            tbody
+              if (!articles || articles.length == 0)
+                tr  
+                  td(colspan='1')
+                  td(colspan='4') Нет добавленных статей
+              else
+                each article in articles
+                  tr
+                    td
+                      label.checkbox
+                        span.icons
+                          span.first-icon.fa.fa-square-o
+                          span.second-icon.fa.fa-check-square-o
+                        input(type='checkbox' value=article._id data-toggle='checkbox')
+                    td.hidden-xs=moment(article.date).format('DD.MM.YY HH:mm:ss')
+                    td
+                      a(href=`/articles/${article._id}`) #{article.title}
+                    td.hidden-xs #{article.description}
+                    td.td-actions.text-right
+                      a.btn.btn-success.btn-simple.btn-xs(href=`/articles/${article._id}` rel='tooltip' title='' data-original-title='Редактировать')
+                        i.fa.fa-edit
+                      a.btn.btn-danger.btn-simple.btn-xs.article-remove(href=`#` data-id=article._id rel='tooltip' title='' data-original-title='Удалить')
+                        i.fa.fa-trash-o
+          .text-center
+            include modules/pagination
+          .content.text-right
+            a.btn.btn-fill.btn-success(href='/articles/new') Добавить

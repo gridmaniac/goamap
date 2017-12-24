@@ -1,0 +1,63 @@
+extends layout
+
+block link
+  -var active = '/settings'
+  
+block content
+  .row
+    .col-lg-8
+      .card
+        .content
+          form.form-horizontal(method='post')
+            legend Карта
+            .form-group
+              label.col-sm-2.control-label Широта (центр)
+                star *
+              .col-sm-10
+                input.form-control(type='text' name='centerLat' value=centerLat)
+            .form-group
+              label.col-sm-2.control-label Долгота (центр)
+                star *
+              .col-sm-10
+                input.form-control(type='text' name='centerLng' value=centerLng)
+            .form-group
+              label.col-sm-2.control-label Масштаб
+                star *
+              .col-sm-10
+                input.form-control(type='number' name='centerZoom' value=centerZoom)
+            legend Фотографии
+            .form-group
+              label.col-sm-2.control-label Макс. ширина
+                star *
+              .col-sm-10
+                input.form-control(type='text' name='maxPhotoWidth' value=maxPhotoWidth)
+            legend Объявления
+            .form-group
+              label.col-sm-2.control-label Цена размещения (1 день, USD)
+                star *
+              .col-sm-10
+                input.form-control(type='number' name='adPer1' value=adPer1)
+            .form-group
+              label.col-sm-2.control-label Цена размещения (7 дней, USD)
+                star *
+              .col-sm-10
+                input.form-control(type='number' name='adPer7' value=adPer7)
+            .form-group
+              label.col-sm-2.control-label Цена размещения (14 дней, USD)
+                star *
+              .col-sm-10
+                input.form-control(type='number' name='adPer14' value=adPer14)
+            .form-group
+              label.col-sm-2.control-label Цена размещения (30 дней, USD)
+                star *
+              .col-sm-10
+                input.form-control(type='number' name='adPer30' value=adPer30)
+            .form-group
+              label.col-sm-2.control-label Поднять (USD)
+                star *
+              .col-sm-10
+                input.form-control(type='number' name='adRise' value=adRise)
+            .form-group
+              label.col-md-2
+              .col-sm-9
+                button.btn.btn-fill.btn-success(type='submit' formaction='/settings/update') Сохранить настройки
