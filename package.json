@@ -21,7 +21,7 @@
     "koa-session": "^5.5.0",
     "koa-state": "^1.1.0",
     "koa-static": "^4.0.1",
-    "moment": "^2.19.1",
+    "moment": "^2.29.2",
     "node-couchdb": "^1.2.0",
     "passport-http": "^0.3.0",
     "require-dir": "^0.3.2",
